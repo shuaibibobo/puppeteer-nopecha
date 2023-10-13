@@ -14,9 +14,11 @@ class NopeCHAPluginClass extends PuppeteerExtraPlugin {
     async onBrowser(browser) {
         const page = await browser.newPage();
         await page.goto('https://nopecha.com/setup#' + this.nopeKey);
-        await page.waitForSelector('table')
+        try {
+            await page.waitForSelector('table')
+        } catch (err) { }
         setTimeout(async () => {
-            await page.close();
+            try { await page.close(); } catch (err) { }
         }, 1000);
     }
 }
