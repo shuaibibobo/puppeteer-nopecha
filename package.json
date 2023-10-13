@@ -1,5 +1,5 @@
 {
-  "name": "plugin",
+  "name": "puppeteer-nopecha",
   "version": "1.0.0",
   "description": "This plugin allows you to easily install and use the NopeCHA Chrome extension with puppeteer.",
   "main": "index.js",
