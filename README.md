@@ -1,4 +1,9 @@
 # puppeteer-nopecha
+
+```bash
+npm i puppeteer puppeteer-extra puppeteer-nopecha
+```
+
 You can use it as in the example below. NopeCHA automatically installs the Captcha Solver plugin and activates your key.
 
 ```js
