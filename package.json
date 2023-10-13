@@ -1,0 +1,24 @@
+{
+  "name": "plugin",
+  "version": "1.0.0",
+  "description": "This plugin allows you to easily install and use the NopeCHA Chrome extension with puppeteer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NopeCHA",
+    "nopecha",
+    "captcha",
+    "captcha-solver",
+    "solver",
+    "puppeteer",
+    "puppeteer-NopeCHA",
+    "NopeCHA-extension"
+  ],
+  "author": "zfcsoftware",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer-extra-plugin": "^3.2.3"
+  }
+}

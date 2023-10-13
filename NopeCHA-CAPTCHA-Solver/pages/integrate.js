@@ -1,0 +1,1 @@
+(()=>{var n=chrome;function t(o){if(document.readyState!=="loading")setTimeout(o,0);else{let e;e=()=>{removeEventListener("DOMContentLoaded",e),o()},addEventListener("DOMContentLoaded",e)}}function r(){document.documentElement.setAttribute("installed","yes"),document.documentElement.setAttribute("data",JSON.stringify({version:n.runtime.getManifest().version}))}t(r);})();
