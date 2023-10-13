@@ -16,6 +16,11 @@
     "puppeteer-NopeCHA",
     "NopeCHA-extension"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zfcsoftware/puppeteer-nopecha"
+  },
+  "homepage": "https://github.com/zfcsoftware/puppeteer-nopecha",
   "author": "zfcsoftware",
   "license": "ISC",
   "dependencies": {
