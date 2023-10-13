@@ -2,10 +2,13 @@ const { PuppeteerExtraPlugin } = require('puppeteer-extra-plugin');
 class NopeCHAPluginClass extends PuppeteerExtraPlugin {
     constructor(opts = {}) {
         super(opts);
-        this.nopeKey = opts.nopeKey
+        
     }
     get name() {
         return 'puppeteer-nopecha';
+    }
+    setKey(nopeKey){
+        this.nopeKey = nopeKey
     }
     async beforeLaunch(options) {
         options.args.push('--disable-extensions-except=' + __dirname + '/NopeCHA-CAPTCHA-Solver');
@@ -22,7 +25,7 @@ class NopeCHAPluginClass extends PuppeteerExtraPlugin {
         }, 1000);
     }
 }
-
-module.exports = NopeCHAPluginClass
+var newNope = new NopeCHAPluginClass()
+module.exports = newNope
 
 

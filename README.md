@@ -8,13 +8,10 @@ You can use it as in the example below. NopeCHA automatically installs the Captc
 
 ```js
 const puppeteer = require('puppeteer-extra');
-const NopeCHAPluginClass = require('puppeteer-nopecha')
+const NopeCHA = require('puppeteer-nopecha')
 
-const NopeCHAPlugin = new NopeCHAPluginClass({
-    nopeKey: '<key>'
-});
-
-puppeteer.use(NopeCHAPlugin);
+NopeCHA.setKey('<key>')
+puppeteer.use(NopeCHA);
 
 puppeteer.launch({ headless: false }).then(async (browser) => {
     const page = await browser.newPage();
